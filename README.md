@@ -1,2 +1,3 @@
-# MyPythonCode
-PythonCode during my course practicing
+# MyCode
+
+Code during my course practicing
