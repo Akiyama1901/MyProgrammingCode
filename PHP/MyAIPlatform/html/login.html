@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>人工智能应用平台</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="decoration-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="left-content">
+                <img src="../src/AIbot.png" alt="Illustration" class="illustration">
+                <div class="slogan">AI改变生活&nbsp;&nbsp;&nbsp;&nbsp;科技连接未来</div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="login-card">
+                <div class="ai-icon">AI</div>
+                <h1 class="platform-title">人工智能应用平台</h1>
+                <form action="../php/login.php" method="post">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="请输入用户名">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="请输入密码">
+                    </div>
+                    <div class="input-check">
+                    <input type="text" id="captcha" name="captcha" placeholder="请输入验证码"/>
+                    <img style="border:1px solid;" src="../php/code.php"/>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-login">登录</button>
+                        <button type="button" name="register" class="btn btn-register" onclick="location.href='../html/register.html'">注册</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

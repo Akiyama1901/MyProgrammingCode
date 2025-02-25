@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【厦门】历史天气逐小时温度/降水量/湿度/aqi/气压/风向/风力/风速/能见度等数据 - 福建厦门历史天气查询</title>
+    <meta name="Keywords" content="厦门过去天气数据及逐小时温度/降水量/湿度/aqi/气压/风向/风力/风速/能见度详细数据,厦门历史天气小时数据,厦门历史气温逐小时数据,厦门历史天气,厦门历史气温,厦门过去天气">
+    <meta name="description" content="提供厦门历史天气和厦门历史天气小时数据查询，包括厦门天气历史气象数据，厦门历史天气24小时数据：包含厦门降水量/温度/湿度/aqi/气压/风向/风力/风速/能见度等数据，厦门过去某一天,一周,一个月,一年的天气及逐小时的详细情况">
+    <link href="/static/app/bootstrap.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#712cf9">
+    <link href="/static/app/app.css" rel="stylesheet">
+    <script src="/static/app/bootstrap.bundle.min.js"></script>
+    <script src="/static/app/jquery-3.7.1.min.js"></script>
+    <script src="/static/app/app.js"></script>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/c/font_4389252_ysms7h3wp5a.css">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9b51d48f0c6b59b6048c9346d825e81a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+<header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow bg-dark">
+    <div class="navbar-brand col-md-3 col-lg-2 me-0 px-3  fs-6 justify-content-between d-flex align-items-center bg-transparent shadow-none pt-0 pb-0" style="line-height: 3">
+        <a class="text-white text-decoration-none" href="/"><strong><i class="iconfont icon-icon_xinyong_xianxing_jijin-"></i></strong> 历史天气数据</a>
+        <div class="dropdown d-none d-lg-inline-block">
+            <button class="btn btn-info btn-sm dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                发现 <i class="iconfont icon-faxian3"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/where-rain.html">哪里在下雨？</a></li>
+                <li><a class="dropdown-item" href="/where-aqi.html">极端天气</a></li>
+                <li><a class="dropdown-item" href="/where-aqi-good.html">环境优良城市</a></li>
+                <li><a class="dropdown-item" href="/where-hot.html">今日哪里热？</a></li>
+                <li><a class="dropdown-item" href="/where-cold.html">今天哪里冷？</a></li>
+            </ul>
+        </div>
+    </div>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="position-relative w-100">
+        <input class="form-control form-control-dark w-100 rounded-0 border-0" name="sinput" id="sinput" type="text" placeholder="输入城市或区 名称 查天气历史数据" aria-label="Search">
+        <div id="dropdown-menu" class="dropdown-menu w-100 rounded-top-0 flex-column" aria-labelledby="sinput"></div>
+    </div>
+
+    <div class="navbar-nav d-none d-lg-inline-block">
+        <div class="nav-item text-nowrap d-flex px-3">
+            
+                <a href="/login" target="_blank">
+                    <button type="button" class="btn btn-outline-light me-2 btn-sm">登录</button>
+                </a>
+                <a href="/register" target="_blank">
+                    <button type="button" class="btn btn-warning btn-sm">注册</button>
+                </a>
+            
+        </div>
+    </div>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-2 col-lg-1 d-md-block bg-white sidebar collapse shadow-lg "
+        >
+            <div class="position-sticky pt-3 sidebar-sticky pb-3">
+                <ul class="nav flex-column pb-5">
+                    <li class="d-flex ps-4 pb-3 d-block d-lg-none">
+                        
+                            <a href="/login" target="_blank">
+                                <button type="button" class="btn btn-primary me-2 ">登录</button>
+                            </a>
+                            <a href="/register" target="_blank">
+                                <button type="button" class="btn btn-warning ms-3">注册</button>
+                            </a>
+                        
+                    </li>
+                    <li class="d-block d-lg-none">
+                        <a href="#where" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator">
+                            <svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path>
+                            </svg>
+                            <span class="ms-1 d-sm-inline text-danger fs-6 fw-bold">发现？</span>
+                        </a>
+                        <ul class="collapse  nav flex-column ms-3" id="where" data-bs-parent="#menu">
+                            <li class="py-2 ps-3"><a class="dropdown-item text-secondary fw-bold" href="/where-rain.html">哪里在下雨？</a></li>
+                            <li class="py-2 ps-3"><a class="dropdown-item text-secondary fw-bold" href="/where-aqi.html">极端天气</a></li>
+                            <li class="py-2 ps-3"><a class="dropdown-item text-secondary fw-bold" href="/where-aqi-good.html">环境优良城市</a></li>
+                            <li class="py-2 ps-3"><a class="dropdown-item text-secondary fw-bold" href="/where-hot.html">今日哪里热？</a></li>
+                            <li class="py-2 ps-3"><a class="dropdown-item text-secondary fw-bold" href="/where-cold.html">今天哪里冷？</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#area_1" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">北京</span></a><ul class="collapse  nav flex-column ms-3" id="area_1" data-bs-parent="#menu"><li class="w-100"><a href="/area/北京/北京.html" class="nav-link ps-4"> 北京 </a></li></ul></li><li><a href="#area_2" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">上海</span></a><ul class="collapse  nav flex-column ms-3" id="area_2" data-bs-parent="#menu"><li class="w-100"><a href="/area/上海/上海.html" class="nav-link ps-4"> 上海 </a></li></ul></li><li><a href="#area_3" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">天津</span></a><ul class="collapse  nav flex-column ms-3" id="area_3" data-bs-parent="#menu"><li class="w-100"><a href="/area/天津/天津.html" class="nav-link ps-4"> 天津 </a></li></ul></li><li><a href="#area_4" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">重庆</span></a><ul class="collapse  nav flex-column ms-3" id="area_4" data-bs-parent="#menu"><li class="w-100"><a href="/area/重庆/重庆.html" class="nav-link ps-4"> 重庆 </a></li></ul></li><li><a href="#area_5" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">黑龙江</span></a><ul class="collapse  nav flex-column ms-3" id="area_5" data-bs-parent="#menu"><li class="w-100"><a href="/area/黑龙江/哈尔滨.html" class="nav-link ps-4"> 哈尔滨 </a></li><li class="w-100"><a href="/area/黑龙江/齐齐哈尔.html" class="nav-link ps-4"> 齐齐哈尔 </a></li><li class="w-100"><a href="/area/黑龙江/牡丹江.html" class="nav-link ps-4"> 牡丹江 </a></li><li class="w-100"><a href="/area/黑龙江/佳木斯.html" class="nav-link ps-4"> 佳木斯 </a></li><li class="w-100"><a href="/area/黑龙江/绥化.html" class="nav-link ps-4"> 绥化 </a></li><li class="w-100"><a href="/area/黑龙江/黑河.html" class="nav-link ps-4"> 黑河 </a></li><li class="w-100"><a href="/area/黑龙江/大兴安岭.html" class="nav-link ps-4"> 大兴安岭 </a></li><li class="w-100"><a href="/area/黑龙江/伊春.html" class="nav-link ps-4"> 伊春 </a></li><li class="w-100"><a href="/area/黑龙江/大庆.html" class="nav-link ps-4"> 大庆 </a></li><li class="w-100"><a href="/area/黑龙江/七台河.html" class="nav-link ps-4"> 七台河 </a></li><li class="w-100"><a href="/area/黑龙江/鸡西.html" class="nav-link ps-4"> 鸡西 </a></li><li class="w-100"><a href="/area/黑龙江/鹤岗.html" class="nav-link ps-4"> 鹤岗 </a></li><li class="w-100"><a href="/area/黑龙江/双鸭山.html" class="nav-link ps-4"> 双鸭山 </a></li></ul></li><li><a href="#area_6" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">吉林</span></a><ul class="collapse  nav flex-column ms-3" id="area_6" data-bs-parent="#menu"><li class="w-100"><a href="/area/吉林/长春.html" class="nav-link ps-4"> 长春 </a></li><li class="w-100"><a href="/area/吉林/吉林.html" class="nav-link ps-4"> 吉林 </a></li><li class="w-100"><a href="/area/吉林/延边.html" class="nav-link ps-4"> 延边 </a></li><li class="w-100"><a href="/area/吉林/四平.html" class="nav-link ps-4"> 四平 </a></li><li class="w-100"><a href="/area/吉林/通化.html" class="nav-link ps-4"> 通化 </a></li><li class="w-100"><a href="/area/吉林/白城.html" class="nav-link ps-4"> 白城 </a></li><li class="w-100"><a href="/area/吉林/辽源.html" class="nav-link ps-4"> 辽源 </a></li><li class="w-100"><a href="/area/吉林/松原.html" class="nav-link ps-4"> 松原 </a></li><li class="w-100"><a href="/area/吉林/白山.html" class="nav-link ps-4"> 白山 </a></li></ul></li><li><a href="#area_7" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">辽宁</span></a><ul class="collapse  nav flex-column ms-3" id="area_7" data-bs-parent="#menu"><li class="w-100"><a href="/area/辽宁/沈阳.html" class="nav-link ps-4"> 沈阳 </a></li><li class="w-100"><a href="/area/辽宁/大连.html" class="nav-link ps-4"> 大连 </a></li><li class="w-100"><a href="/area/辽宁/鞍山.html" class="nav-link ps-4"> 鞍山 </a></li><li class="w-100"><a href="/area/辽宁/抚顺.html" class="nav-link ps-4"> 抚顺 </a></li><li class="w-100"><a href="/area/辽宁/本溪.html" class="nav-link ps-4"> 本溪 </a></li><li class="w-100"><a href="/area/辽宁/丹东.html" class="nav-link ps-4"> 丹东 </a></li><li class="w-100"><a href="/area/辽宁/锦州.html" class="nav-link ps-4"> 锦州 </a></li><li class="w-100"><a href="/area/辽宁/营口.html" class="nav-link ps-4"> 营口 </a></li><li class="w-100"><a href="/area/辽宁/阜新.html" class="nav-link ps-4"> 阜新 </a></li><li class="w-100"><a href="/area/辽宁/辽阳.html" class="nav-link ps-4"> 辽阳 </a></li><li class="w-100"><a href="/area/辽宁/铁岭.html" class="nav-link ps-4"> 铁岭 </a></li><li class="w-100"><a href="/area/辽宁/朝阳.html" class="nav-link ps-4"> 朝阳 </a></li><li class="w-100"><a href="/area/辽宁/盘锦.html" class="nav-link ps-4"> 盘锦 </a></li><li class="w-100"><a href="/area/辽宁/葫芦岛.html" class="nav-link ps-4"> 葫芦岛 </a></li></ul></li><li><a href="#area_8" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">内蒙古</span></a><ul class="collapse  nav flex-column ms-3" id="area_8" data-bs-parent="#menu"><li class="w-100"><a href="/area/内蒙古/呼和浩特.html" class="nav-link ps-4"> 呼和浩特 </a></li><li class="w-100"><a href="/area/内蒙古/包头.html" class="nav-link ps-4"> 包头 </a></li><li class="w-100"><a href="/area/内蒙古/乌海.html" class="nav-link ps-4"> 乌海 </a></li><li class="w-100"><a href="/area/内蒙古/乌兰察布.html" class="nav-link ps-4"> 乌兰察布 </a></li><li class="w-100"><a href="/area/内蒙古/通辽.html" class="nav-link ps-4"> 通辽 </a></li><li class="w-100"><a href="/area/内蒙古/赤峰.html" class="nav-link ps-4"> 赤峰 </a></li><li class="w-100"><a href="/area/内蒙古/鄂尔多斯.html" class="nav-link ps-4"> 鄂尔多斯 </a></li><li class="w-100"><a href="/area/内蒙古/巴彦淖尔.html" class="nav-link ps-4"> 巴彦淖尔 </a></li><li class="w-100"><a href="/area/内蒙古/锡林郭勒.html" class="nav-link ps-4"> 锡林郭勒 </a></li><li class="w-100"><a href="/area/内蒙古/呼伦贝尔.html" class="nav-link ps-4"> 呼伦贝尔 </a></li><li class="w-100"><a href="/area/内蒙古/兴安盟.html" class="nav-link ps-4"> 兴安盟 </a></li><li class="w-100"><a href="/area/内蒙古/阿拉善盟.html" class="nav-link ps-4"> 阿拉善盟 </a></li></ul></li><li><a href="#area_9" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">河北</span></a><ul class="collapse  nav flex-column ms-3" id="area_9" data-bs-parent="#menu"><li class="w-100"><a href="/area/河北/石家庄.html" class="nav-link ps-4"> 石家庄 </a></li><li class="w-100"><a href="/area/河北/保定.html" class="nav-link ps-4"> 保定 </a></li><li class="w-100"><a href="/area/河北/张家口.html" class="nav-link ps-4"> 张家口 </a></li><li class="w-100"><a href="/area/河北/承德.html" class="nav-link ps-4"> 承德 </a></li><li class="w-100"><a href="/area/河北/唐山.html" class="nav-link ps-4"> 唐山 </a></li><li class="w-100"><a href="/area/河北/廊坊.html" class="nav-link ps-4"> 廊坊 </a></li><li class="w-100"><a href="/area/河北/沧州.html" class="nav-link ps-4"> 沧州 </a></li><li class="w-100"><a href="/area/河北/衡水.html" class="nav-link ps-4"> 衡水 </a></li><li class="w-100"><a href="/area/河北/邢台.html" class="nav-link ps-4"> 邢台 </a></li><li class="w-100"><a href="/area/河北/邯郸.html" class="nav-link ps-4"> 邯郸 </a></li><li class="w-100"><a href="/area/河北/秦皇岛.html" class="nav-link ps-4"> 秦皇岛 </a></li><li class="w-100"><a href="/area/河北/雄安新区.html" class="nav-link ps-4"> 雄安新区 </a></li></ul></li><li><a href="#area_10" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">山西</span></a><ul class="collapse  nav flex-column ms-3" id="area_10" data-bs-parent="#menu"><li class="w-100"><a href="/area/山西/太原.html" class="nav-link ps-4"> 太原 </a></li><li class="w-100"><a href="/area/山西/大同.html" class="nav-link ps-4"> 大同 </a></li><li class="w-100"><a href="/area/山西/阳泉.html" class="nav-link ps-4"> 阳泉 </a></li><li class="w-100"><a href="/area/山西/晋中.html" class="nav-link ps-4"> 晋中 </a></li><li class="w-100"><a href="/area/山西/长治.html" class="nav-link ps-4"> 长治 </a></li><li class="w-100"><a href="/area/山西/晋城.html" class="nav-link ps-4"> 晋城 </a></li><li class="w-100"><a href="/area/山西/临汾.html" class="nav-link ps-4"> 临汾 </a></li><li class="w-100"><a href="/area/山西/运城.html" class="nav-link ps-4"> 运城 </a></li><li class="w-100"><a href="/area/山西/朔州.html" class="nav-link ps-4"> 朔州 </a></li><li class="w-100"><a href="/area/山西/忻州.html" class="nav-link ps-4"> 忻州 </a></li><li class="w-100"><a href="/area/山西/吕梁.html" class="nav-link ps-4"> 吕梁 </a></li></ul></li><li><a href="#area_11" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">陕西</span></a><ul class="collapse  nav flex-column ms-3" id="area_11" data-bs-parent="#menu"><li class="w-100"><a href="/area/陕西/西安.html" class="nav-link ps-4"> 西安 </a></li><li class="w-100"><a href="/area/陕西/咸阳.html" class="nav-link ps-4"> 咸阳 </a></li><li class="w-100"><a href="/area/陕西/延安.html" class="nav-link ps-4"> 延安 </a></li><li class="w-100"><a href="/area/陕西/榆林.html" class="nav-link ps-4"> 榆林 </a></li><li class="w-100"><a href="/area/陕西/渭南.html" class="nav-link ps-4"> 渭南 </a></li><li class="w-100"><a href="/area/陕西/商洛.html" class="nav-link ps-4"> 商洛 </a></li><li class="w-100"><a href="/area/陕西/安康.html" class="nav-link ps-4"> 安康 </a></li><li class="w-100"><a href="/area/陕西/汉中.html" class="nav-link ps-4"> 汉中 </a></li><li class="w-100"><a href="/area/陕西/宝鸡.html" class="nav-link ps-4"> 宝鸡 </a></li><li class="w-100"><a href="/area/陕西/铜川.html" class="nav-link ps-4"> 铜川 </a></li><li class="w-100"><a href="/area/陕西/杨凌.html" class="nav-link ps-4"> 杨凌 </a></li></ul></li><li><a href="#area_12" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">山东</span></a><ul class="collapse  nav flex-column ms-3" id="area_12" data-bs-parent="#menu"><li class="w-100"><a href="/area/山东/济南.html" class="nav-link ps-4"> 济南 </a></li><li class="w-100"><a href="/area/山东/青岛.html" class="nav-link ps-4"> 青岛 </a></li><li class="w-100"><a href="/area/山东/淄博.html" class="nav-link ps-4"> 淄博 </a></li><li class="w-100"><a href="/area/山东/德州.html" class="nav-link ps-4"> 德州 </a></li><li class="w-100"><a href="/area/山东/烟台.html" class="nav-link ps-4"> 烟台 </a></li><li class="w-100"><a href="/area/山东/潍坊.html" class="nav-link ps-4"> 潍坊 </a></li><li class="w-100"><a href="/area/山东/济宁.html" class="nav-link ps-4"> 济宁 </a></li><li class="w-100"><a href="/area/山东/泰安.html" class="nav-link ps-4"> 泰安 </a></li><li class="w-100"><a href="/area/山东/临沂.html" class="nav-link ps-4"> 临沂 </a></li><li class="w-100"><a href="/area/山东/菏泽.html" class="nav-link ps-4"> 菏泽 </a></li><li class="w-100"><a href="/area/山东/滨州.html" class="nav-link ps-4"> 滨州 </a></li><li class="w-100"><a href="/area/山东/东营.html" class="nav-link ps-4"> 东营 </a></li><li class="w-100"><a href="/area/山东/威海.html" class="nav-link ps-4"> 威海 </a></li><li class="w-100"><a href="/area/山东/枣庄.html" class="nav-link ps-4"> 枣庄 </a></li><li class="w-100"><a href="/area/山东/日照.html" class="nav-link ps-4"> 日照 </a></li><li class="w-100"><a href="/area/山东/莱芜.html" class="nav-link ps-4"> 莱芜 </a></li><li class="w-100"><a href="/area/山东/聊城.html" class="nav-link ps-4"> 聊城 </a></li></ul></li><li><a href="#area_13" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">新疆</span></a><ul class="collapse  nav flex-column ms-3" id="area_13" data-bs-parent="#menu"><li class="w-100"><a href="/area/新疆/乌鲁木齐.html" class="nav-link ps-4"> 乌鲁木齐 </a></li><li class="w-100"><a href="/area/新疆/克拉玛依.html" class="nav-link ps-4"> 克拉玛依 </a></li><li class="w-100"><a href="/area/新疆/石河子.html" class="nav-link ps-4"> 石河子 </a></li><li class="w-100"><a href="/area/新疆/昌吉.html" class="nav-link ps-4"> 昌吉 </a></li><li class="w-100"><a href="/area/新疆/吐鲁番.html" class="nav-link ps-4"> 吐鲁番 </a></li><li class="w-100"><a href="/area/新疆/巴音郭楞.html" class="nav-link ps-4"> 巴音郭楞 </a></li><li class="w-100"><a href="/area/新疆/阿拉尔.html" class="nav-link ps-4"> 阿拉尔 </a></li><li class="w-100"><a href="/area/新疆/阿克苏.html" class="nav-link ps-4"> 阿克苏 </a></li><li class="w-100"><a href="/area/新疆/喀什.html" class="nav-link ps-4"> 喀什 </a></li><li class="w-100"><a href="/area/新疆/伊犁.html" class="nav-link ps-4"> 伊犁 </a></li><li class="w-100"><a href="/area/新疆/塔城.html" class="nav-link ps-4"> 塔城 </a></li><li class="w-100"><a href="/area/新疆/哈密.html" class="nav-link ps-4"> 哈密 </a></li><li class="w-100"><a href="/area/新疆/和田.html" class="nav-link ps-4"> 和田 </a></li><li class="w-100"><a href="/area/新疆/阿勒泰.html" class="nav-link ps-4"> 阿勒泰 </a></li><li class="w-100"><a href="/area/新疆/克州.html" class="nav-link ps-4"> 克州 </a></li><li class="w-100"><a href="/area/新疆/博尔塔拉.html" class="nav-link ps-4"> 博尔塔拉 </a></li><li class="w-100"><a href="/area/新疆/图木舒克.html" class="nav-link ps-4"> 图木舒克 </a></li><li class="w-100"><a href="/area/新疆/五家渠.html" class="nav-link ps-4"> 五家渠 </a></li><li class="w-100"><a href="/area/新疆/铁门关.html" class="nav-link ps-4"> 铁门关 </a></li><li class="w-100"><a href="/area/新疆/昆玉.html" class="nav-link ps-4"> 昆玉 </a></li><li class="w-100"><a href="/area/新疆/北屯.html" class="nav-link ps-4"> 北屯 </a></li><li class="w-100"><a href="/area/新疆/双河.html" class="nav-link ps-4"> 双河 </a></li><li class="w-100"><a href="/area/新疆/可克达拉.html" class="nav-link ps-4"> 可克达拉 </a></li></ul></li><li><a href="#area_14" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">西藏</span></a><ul class="collapse  nav flex-column ms-3" id="area_14" data-bs-parent="#menu"><li class="w-100"><a href="/area/西藏/拉萨.html" class="nav-link ps-4"> 拉萨 </a></li><li class="w-100"><a href="/area/西藏/日喀则.html" class="nav-link ps-4"> 日喀则 </a></li><li class="w-100"><a href="/area/西藏/山南.html" class="nav-link ps-4"> 山南 </a></li><li class="w-100"><a href="/area/西藏/林芝.html" class="nav-link ps-4"> 林芝 </a></li><li class="w-100"><a href="/area/西藏/昌都.html" class="nav-link ps-4"> 昌都 </a></li><li class="w-100"><a href="/area/西藏/那曲.html" class="nav-link ps-4"> 那曲 </a></li><li class="w-100"><a href="/area/西藏/阿里.html" class="nav-link ps-4"> 阿里 </a></li></ul></li><li><a href="#area_15" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">青海</span></a><ul class="collapse  nav flex-column ms-3" id="area_15" data-bs-parent="#menu"><li class="w-100"><a href="/area/青海/西宁.html" class="nav-link ps-4"> 西宁 </a></li><li class="w-100"><a href="/area/青海/海东.html" class="nav-link ps-4"> 海东 </a></li><li class="w-100"><a href="/area/青海/黄南.html" class="nav-link ps-4"> 黄南 </a></li><li class="w-100"><a href="/area/青海/海南.html" class="nav-link ps-4"> 海南 </a></li><li class="w-100"><a href="/area/青海/果洛.html" class="nav-link ps-4"> 果洛 </a></li><li class="w-100"><a href="/area/青海/玉树.html" class="nav-link ps-4"> 玉树 </a></li><li class="w-100"><a href="/area/青海/海西.html" class="nav-link ps-4"> 海西 </a></li><li class="w-100"><a href="/area/青海/海北.html" class="nav-link ps-4"> 海北 </a></li></ul></li><li><a href="#area_16" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">甘肃</span></a><ul class="collapse  nav flex-column ms-3" id="area_16" data-bs-parent="#menu"><li class="w-100"><a href="/area/甘肃/兰州.html" class="nav-link ps-4"> 兰州 </a></li><li class="w-100"><a href="/area/甘肃/定西.html" class="nav-link ps-4"> 定西 </a></li><li class="w-100"><a href="/area/甘肃/平凉.html" class="nav-link ps-4"> 平凉 </a></li><li class="w-100"><a href="/area/甘肃/庆阳.html" class="nav-link ps-4"> 庆阳 </a></li><li class="w-100"><a href="/area/甘肃/武威.html" class="nav-link ps-4"> 武威 </a></li><li class="w-100"><a href="/area/甘肃/金昌.html" class="nav-link ps-4"> 金昌 </a></li><li class="w-100"><a href="/area/甘肃/张掖.html" class="nav-link ps-4"> 张掖 </a></li><li class="w-100"><a href="/area/甘肃/酒泉.html" class="nav-link ps-4"> 酒泉 </a></li><li class="w-100"><a href="/area/甘肃/天水.html" class="nav-link ps-4"> 天水 </a></li><li class="w-100"><a href="/area/甘肃/陇南.html" class="nav-link ps-4"> 陇南 </a></li><li class="w-100"><a href="/area/甘肃/临夏.html" class="nav-link ps-4"> 临夏 </a></li><li class="w-100"><a href="/area/甘肃/甘南.html" class="nav-link ps-4"> 甘南 </a></li><li class="w-100"><a href="/area/甘肃/白银.html" class="nav-link ps-4"> 白银 </a></li><li class="w-100"><a href="/area/甘肃/嘉峪关.html" class="nav-link ps-4"> 嘉峪关 </a></li></ul></li><li><a href="#area_17" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">宁夏</span></a><ul class="collapse  nav flex-column ms-3" id="area_17" data-bs-parent="#menu"><li class="w-100"><a href="/area/宁夏/银川.html" class="nav-link ps-4"> 银川 </a></li><li class="w-100"><a href="/area/宁夏/石嘴山.html" class="nav-link ps-4"> 石嘴山 </a></li><li class="w-100"><a href="/area/宁夏/吴忠.html" class="nav-link ps-4"> 吴忠 </a></li><li class="w-100"><a href="/area/宁夏/固原.html" class="nav-link ps-4"> 固原 </a></li><li class="w-100"><a href="/area/宁夏/中卫.html" class="nav-link ps-4"> 中卫 </a></li></ul></li><li><a href="#area_18" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">河南</span></a><ul class="collapse  nav flex-column ms-3" id="area_18" data-bs-parent="#menu"><li class="w-100"><a href="/area/河南/郑州.html" class="nav-link ps-4"> 郑州 </a></li><li class="w-100"><a href="/area/河南/安阳.html" class="nav-link ps-4"> 安阳 </a></li><li class="w-100"><a href="/area/河南/新乡.html" class="nav-link ps-4"> 新乡 </a></li><li class="w-100"><a href="/area/河南/许昌.html" class="nav-link ps-4"> 许昌 </a></li><li class="w-100"><a href="/area/河南/平顶山.html" class="nav-link ps-4"> 平顶山 </a></li><li class="w-100"><a href="/area/河南/信阳.html" class="nav-link ps-4"> 信阳 </a></li><li class="w-100"><a href="/area/河南/南阳.html" class="nav-link ps-4"> 南阳 </a></li><li class="w-100"><a href="/area/河南/开封.html" class="nav-link ps-4"> 开封 </a></li><li class="w-100"><a href="/area/河南/洛阳.html" class="nav-link ps-4"> 洛阳 </a></li><li class="w-100"><a href="/area/河南/商丘.html" class="nav-link ps-4"> 商丘 </a></li><li class="w-100"><a href="/area/河南/焦作.html" class="nav-link ps-4"> 焦作 </a></li><li class="w-100"><a href="/area/河南/鹤壁.html" class="nav-link ps-4"> 鹤壁 </a></li><li class="w-100"><a href="/area/河南/濮阳.html" class="nav-link ps-4"> 濮阳 </a></li><li class="w-100"><a href="/area/河南/周口.html" class="nav-link ps-4"> 周口 </a></li><li class="w-100"><a href="/area/河南/漯河.html" class="nav-link ps-4"> 漯河 </a></li><li class="w-100"><a href="/area/河南/驻马店.html" class="nav-link ps-4"> 驻马店 </a></li><li class="w-100"><a href="/area/河南/三门峡.html" class="nav-link ps-4"> 三门峡 </a></li><li class="w-100"><a href="/area/河南/济源.html" class="nav-link ps-4"> 济源 </a></li></ul></li><li><a href="#area_19" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">江苏</span></a><ul class="collapse  nav flex-column ms-3" id="area_19" data-bs-parent="#menu"><li class="w-100"><a href="/area/江苏/南京.html" class="nav-link ps-4"> 南京 </a></li><li class="w-100"><a href="/area/江苏/无锡.html" class="nav-link ps-4"> 无锡 </a></li><li class="w-100"><a href="/area/江苏/镇江.html" class="nav-link ps-4"> 镇江 </a></li><li class="w-100"><a href="/area/江苏/苏州.html" class="nav-link ps-4"> 苏州 </a></li><li class="w-100"><a href="/area/江苏/南通.html" class="nav-link ps-4"> 南通 </a></li><li class="w-100"><a href="/area/江苏/扬州.html" class="nav-link ps-4"> 扬州 </a></li><li class="w-100"><a href="/area/江苏/盐城.html" class="nav-link ps-4"> 盐城 </a></li><li class="w-100"><a href="/area/江苏/徐州.html" class="nav-link ps-4"> 徐州 </a></li><li class="w-100"><a href="/area/江苏/淮安.html" class="nav-link ps-4"> 淮安 </a></li><li class="w-100"><a href="/area/江苏/连云港.html" class="nav-link ps-4"> 连云港 </a></li><li class="w-100"><a href="/area/江苏/常州.html" class="nav-link ps-4"> 常州 </a></li><li class="w-100"><a href="/area/江苏/泰州.html" class="nav-link ps-4"> 泰州 </a></li><li class="w-100"><a href="/area/江苏/宿迁.html" class="nav-link ps-4"> 宿迁 </a></li></ul></li><li><a href="#area_20" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">湖北</span></a><ul class="collapse  nav flex-column ms-3" id="area_20" data-bs-parent="#menu"><li class="w-100"><a href="/area/湖北/武汉.html" class="nav-link ps-4"> 武汉 </a></li><li class="w-100"><a href="/area/湖北/襄阳.html" class="nav-link ps-4"> 襄阳 </a></li><li class="w-100"><a href="/area/湖北/鄂州.html" class="nav-link ps-4"> 鄂州 </a></li><li class="w-100"><a href="/area/湖北/孝感.html" class="nav-link ps-4"> 孝感 </a></li><li class="w-100"><a href="/area/湖北/黄冈.html" class="nav-link ps-4"> 黄冈 </a></li><li class="w-100"><a href="/area/湖北/黄石.html" class="nav-link ps-4"> 黄石 </a></li><li class="w-100"><a href="/area/湖北/咸宁.html" class="nav-link ps-4"> 咸宁 </a></li><li class="w-100"><a href="/area/湖北/荆州.html" class="nav-link ps-4"> 荆州 </a></li><li class="w-100"><a href="/area/湖北/宜昌.html" class="nav-link ps-4"> 宜昌 </a></li><li class="w-100"><a href="/area/湖北/恩施.html" class="nav-link ps-4"> 恩施 </a></li><li class="w-100"><a href="/area/湖北/十堰.html" class="nav-link ps-4"> 十堰 </a></li><li class="w-100"><a href="/area/湖北/神农架.html" class="nav-link ps-4"> 神农架 </a></li><li class="w-100"><a href="/area/湖北/随州.html" class="nav-link ps-4"> 随州 </a></li><li class="w-100"><a href="/area/湖北/荆门.html" class="nav-link ps-4"> 荆门 </a></li><li class="w-100"><a href="/area/湖北/天门.html" class="nav-link ps-4"> 天门 </a></li><li class="w-100"><a href="/area/湖北/仙桃.html" class="nav-link ps-4"> 仙桃 </a></li><li class="w-100"><a href="/area/湖北/潜江.html" class="nav-link ps-4"> 潜江 </a></li></ul></li><li><a href="#area_21" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">浙江</span></a><ul class="collapse  nav flex-column ms-3" id="area_21" data-bs-parent="#menu"><li class="w-100"><a href="/area/浙江/杭州.html" class="nav-link ps-4"> 杭州 </a></li><li class="w-100"><a href="/area/浙江/湖州.html" class="nav-link ps-4"> 湖州 </a></li><li class="w-100"><a href="/area/浙江/嘉兴.html" class="nav-link ps-4"> 嘉兴 </a></li><li class="w-100"><a href="/area/浙江/宁波.html" class="nav-link ps-4"> 宁波 </a></li><li class="w-100"><a href="/area/浙江/绍兴.html" class="nav-link ps-4"> 绍兴 </a></li><li class="w-100"><a href="/area/浙江/台州.html" class="nav-link ps-4"> 台州 </a></li><li class="w-100"><a href="/area/浙江/温州.html" class="nav-link ps-4"> 温州 </a></li><li class="w-100"><a href="/area/浙江/丽水.html" class="nav-link ps-4"> 丽水 </a></li><li class="w-100"><a href="/area/浙江/金华.html" class="nav-link ps-4"> 金华 </a></li><li class="w-100"><a href="/area/浙江/衢州.html" class="nav-link ps-4"> 衢州 </a></li><li class="w-100"><a href="/area/浙江/舟山.html" class="nav-link ps-4"> 舟山 </a></li></ul></li><li><a href="#area_22" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">安徽</span></a><ul class="collapse  nav flex-column ms-3" id="area_22" data-bs-parent="#menu"><li class="w-100"><a href="/area/安徽/合肥.html" class="nav-link ps-4"> 合肥 </a></li><li class="w-100"><a href="/area/安徽/蚌埠.html" class="nav-link ps-4"> 蚌埠 </a></li><li class="w-100"><a href="/area/安徽/芜湖.html" class="nav-link ps-4"> 芜湖 </a></li><li class="w-100"><a href="/area/安徽/淮南.html" class="nav-link ps-4"> 淮南 </a></li><li class="w-100"><a href="/area/安徽/马鞍山.html" class="nav-link ps-4"> 马鞍山 </a></li><li class="w-100"><a href="/area/安徽/安庆.html" class="nav-link ps-4"> 安庆 </a></li><li class="w-100"><a href="/area/安徽/宿州.html" class="nav-link ps-4"> 宿州 </a></li><li class="w-100"><a href="/area/安徽/阜阳.html" class="nav-link ps-4"> 阜阳 </a></li><li class="w-100"><a href="/area/安徽/亳州.html" class="nav-link ps-4"> 亳州 </a></li><li class="w-100"><a href="/area/安徽/黄山.html" class="nav-link ps-4"> 黄山 </a></li><li class="w-100"><a href="/area/安徽/滁州.html" class="nav-link ps-4"> 滁州 </a></li><li class="w-100"><a href="/area/安徽/淮北.html" class="nav-link ps-4"> 淮北 </a></li><li class="w-100"><a href="/area/安徽/铜陵.html" class="nav-link ps-4"> 铜陵 </a></li><li class="w-100"><a href="/area/安徽/宣城.html" class="nav-link ps-4"> 宣城 </a></li><li class="w-100"><a href="/area/安徽/六安.html" class="nav-link ps-4"> 六安 </a></li><li class="w-100"><a href="/area/安徽/池州.html" class="nav-link ps-4"> 池州 </a></li></ul></li><li><a href="#area_23" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">福建</span></a><ul class="collapse  nav flex-column ms-3" id="area_23" data-bs-parent="#menu"><li class="w-100"><a href="/area/福建/福州.html" class="nav-link ps-4"> 福州 </a></li><li class="w-100"><a href="/area/福建/厦门.html" class="nav-link ps-4"> 厦门 </a></li><li class="w-100"><a href="/area/福建/宁德.html" class="nav-link ps-4"> 宁德 </a></li><li class="w-100"><a href="/area/福建/莆田.html" class="nav-link ps-4"> 莆田 </a></li><li class="w-100"><a href="/area/福建/泉州.html" class="nav-link ps-4"> 泉州 </a></li><li class="w-100"><a href="/area/福建/漳州.html" class="nav-link ps-4"> 漳州 </a></li><li class="w-100"><a href="/area/福建/龙岩.html" class="nav-link ps-4"> 龙岩 </a></li><li class="w-100"><a href="/area/福建/三明.html" class="nav-link ps-4"> 三明 </a></li><li class="w-100"><a href="/area/福建/南平.html" class="nav-link ps-4"> 南平 </a></li><li class="w-100"><a href="/area/福建/钓鱼岛.html" class="nav-link ps-4"> 钓鱼岛 </a></li></ul></li><li><a href="#area_24" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">江西</span></a><ul class="collapse  nav flex-column ms-3" id="area_24" data-bs-parent="#menu"><li class="w-100"><a href="/area/江西/南昌.html" class="nav-link ps-4"> 南昌 </a></li><li class="w-100"><a href="/area/江西/九江.html" class="nav-link ps-4"> 九江 </a></li><li class="w-100"><a href="/area/江西/上饶.html" class="nav-link ps-4"> 上饶 </a></li><li class="w-100"><a href="/area/江西/抚州.html" class="nav-link ps-4"> 抚州 </a></li><li class="w-100"><a href="/area/江西/宜春.html" class="nav-link ps-4"> 宜春 </a></li><li class="w-100"><a href="/area/江西/吉安.html" class="nav-link ps-4"> 吉安 </a></li><li class="w-100"><a href="/area/江西/赣州.html" class="nav-link ps-4"> 赣州 </a></li><li class="w-100"><a href="/area/江西/景德镇.html" class="nav-link ps-4"> 景德镇 </a></li><li class="w-100"><a href="/area/江西/萍乡.html" class="nav-link ps-4"> 萍乡 </a></li><li class="w-100"><a href="/area/江西/新余.html" class="nav-link ps-4"> 新余 </a></li><li class="w-100"><a href="/area/江西/鹰潭.html" class="nav-link ps-4"> 鹰潭 </a></li></ul></li><li><a href="#area_25" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">湖南</span></a><ul class="collapse  nav flex-column ms-3" id="area_25" data-bs-parent="#menu"><li class="w-100"><a href="/area/湖南/长沙.html" class="nav-link ps-4"> 长沙 </a></li><li class="w-100"><a href="/area/湖南/湘潭.html" class="nav-link ps-4"> 湘潭 </a></li><li class="w-100"><a href="/area/湖南/株洲.html" class="nav-link ps-4"> 株洲 </a></li><li class="w-100"><a href="/area/湖南/衡阳.html" class="nav-link ps-4"> 衡阳 </a></li><li class="w-100"><a href="/area/湖南/郴州.html" class="nav-link ps-4"> 郴州 </a></li><li class="w-100"><a href="/area/湖南/常德.html" class="nav-link ps-4"> 常德 </a></li><li class="w-100"><a href="/area/湖南/益阳.html" class="nav-link ps-4"> 益阳 </a></li><li class="w-100"><a href="/area/湖南/娄底.html" class="nav-link ps-4"> 娄底 </a></li><li class="w-100"><a href="/area/湖南/邵阳.html" class="nav-link ps-4"> 邵阳 </a></li><li class="w-100"><a href="/area/湖南/岳阳.html" class="nav-link ps-4"> 岳阳 </a></li><li class="w-100"><a href="/area/湖南/张家界.html" class="nav-link ps-4"> 张家界 </a></li><li class="w-100"><a href="/area/湖南/怀化.html" class="nav-link ps-4"> 怀化 </a></li><li class="w-100"><a href="/area/湖南/永州.html" class="nav-link ps-4"> 永州 </a></li><li class="w-100"><a href="/area/湖南/湘西.html" class="nav-link ps-4"> 湘西 </a></li></ul></li><li><a href="#area_26" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">贵州</span></a><ul class="collapse  nav flex-column ms-3" id="area_26" data-bs-parent="#menu"><li class="w-100"><a href="/area/贵州/贵阳.html" class="nav-link ps-4"> 贵阳 </a></li><li class="w-100"><a href="/area/贵州/遵义.html" class="nav-link ps-4"> 遵义 </a></li><li class="w-100"><a href="/area/贵州/安顺.html" class="nav-link ps-4"> 安顺 </a></li><li class="w-100"><a href="/area/贵州/黔南.html" class="nav-link ps-4"> 黔南 </a></li><li class="w-100"><a href="/area/贵州/黔东南.html" class="nav-link ps-4"> 黔东南 </a></li><li class="w-100"><a href="/area/贵州/铜仁.html" class="nav-link ps-4"> 铜仁 </a></li><li class="w-100"><a href="/area/贵州/毕节.html" class="nav-link ps-4"> 毕节 </a></li><li class="w-100"><a href="/area/贵州/六盘水.html" class="nav-link ps-4"> 六盘水 </a></li><li class="w-100"><a href="/area/贵州/黔西南.html" class="nav-link ps-4"> 黔西南 </a></li></ul></li><li><a href="#area_27" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">四川</span></a><ul class="collapse  nav flex-column ms-3" id="area_27" data-bs-parent="#menu"><li class="w-100"><a href="/area/四川/成都.html" class="nav-link ps-4"> 成都 </a></li><li class="w-100"><a href="/area/四川/攀枝花.html" class="nav-link ps-4"> 攀枝花 </a></li><li class="w-100"><a href="/area/四川/自贡.html" class="nav-link ps-4"> 自贡 </a></li><li class="w-100"><a href="/area/四川/绵阳.html" class="nav-link ps-4"> 绵阳 </a></li><li class="w-100"><a href="/area/四川/南充.html" class="nav-link ps-4"> 南充 </a></li><li class="w-100"><a href="/area/四川/达州.html" class="nav-link ps-4"> 达州 </a></li><li class="w-100"><a href="/area/四川/遂宁.html" class="nav-link ps-4"> 遂宁 </a></li><li class="w-100"><a href="/area/四川/广安.html" class="nav-link ps-4"> 广安 </a></li><li class="w-100"><a href="/area/四川/巴中.html" class="nav-link ps-4"> 巴中 </a></li><li class="w-100"><a href="/area/四川/泸州.html" class="nav-link ps-4"> 泸州 </a></li><li class="w-100"><a href="/area/四川/宜宾.html" class="nav-link ps-4"> 宜宾 </a></li><li class="w-100"><a href="/area/四川/内江.html" class="nav-link ps-4"> 内江 </a></li><li class="w-100"><a href="/area/四川/资阳.html" class="nav-link ps-4"> 资阳 </a></li><li class="w-100"><a href="/area/四川/乐山.html" class="nav-link ps-4"> 乐山 </a></li><li class="w-100"><a href="/area/四川/眉山.html" class="nav-link ps-4"> 眉山 </a></li><li class="w-100"><a href="/area/四川/凉山.html" class="nav-link ps-4"> 凉山 </a></li><li class="w-100"><a href="/area/四川/雅安.html" class="nav-link ps-4"> 雅安 </a></li><li class="w-100"><a href="/area/四川/甘孜.html" class="nav-link ps-4"> 甘孜 </a></li><li class="w-100"><a href="/area/四川/阿坝.html" class="nav-link ps-4"> 阿坝 </a></li><li class="w-100"><a href="/area/四川/德阳.html" class="nav-link ps-4"> 德阳 </a></li><li class="w-100"><a href="/area/四川/广元.html" class="nav-link ps-4"> 广元 </a></li></ul></li><li><a href="#area_28" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">广东</span></a><ul class="collapse  nav flex-column ms-3" id="area_28" data-bs-parent="#menu"><li class="w-100"><a href="/area/广东/广州.html" class="nav-link ps-4"> 广州 </a></li><li class="w-100"><a href="/area/广东/韶关.html" class="nav-link ps-4"> 韶关 </a></li><li class="w-100"><a href="/area/广东/惠州.html" class="nav-link ps-4"> 惠州 </a></li><li class="w-100"><a href="/area/广东/梅州.html" class="nav-link ps-4"> 梅州 </a></li><li class="w-100"><a href="/area/广东/汕头.html" class="nav-link ps-4"> 汕头 </a></li><li class="w-100"><a href="/area/广东/深圳.html" class="nav-link ps-4"> 深圳 </a></li><li class="w-100"><a href="/area/广东/珠海.html" class="nav-link ps-4"> 珠海 </a></li><li class="w-100"><a href="/area/广东/佛山.html" class="nav-link ps-4"> 佛山 </a></li><li class="w-100"><a href="/area/广东/肇庆.html" class="nav-link ps-4"> 肇庆 </a></li><li class="w-100"><a href="/area/广东/湛江.html" class="nav-link ps-4"> 湛江 </a></li><li class="w-100"><a href="/area/广东/江门.html" class="nav-link ps-4"> 江门 </a></li><li class="w-100"><a href="/area/广东/河源.html" class="nav-link ps-4"> 河源 </a></li><li class="w-100"><a href="/area/广东/清远.html" class="nav-link ps-4"> 清远 </a></li><li class="w-100"><a href="/area/广东/云浮.html" class="nav-link ps-4"> 云浮 </a></li><li class="w-100"><a href="/area/广东/潮州.html" class="nav-link ps-4"> 潮州 </a></li><li class="w-100"><a href="/area/广东/东莞.html" class="nav-link ps-4"> 东莞 </a></li><li class="w-100"><a href="/area/广东/中山.html" class="nav-link ps-4"> 中山 </a></li><li class="w-100"><a href="/area/广东/阳江.html" class="nav-link ps-4"> 阳江 </a></li><li class="w-100"><a href="/area/广东/揭阳.html" class="nav-link ps-4"> 揭阳 </a></li><li class="w-100"><a href="/area/广东/茂名.html" class="nav-link ps-4"> 茂名 </a></li><li class="w-100"><a href="/area/广东/汕尾.html" class="nav-link ps-4"> 汕尾 </a></li></ul></li><li><a href="#area_29" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">云南</span></a><ul class="collapse  nav flex-column ms-3" id="area_29" data-bs-parent="#menu"><li class="w-100"><a href="/area/云南/昆明.html" class="nav-link ps-4"> 昆明 </a></li><li class="w-100"><a href="/area/云南/大理.html" class="nav-link ps-4"> 大理 </a></li><li class="w-100"><a href="/area/云南/红河.html" class="nav-link ps-4"> 红河 </a></li><li class="w-100"><a href="/area/云南/曲靖.html" class="nav-link ps-4"> 曲靖 </a></li><li class="w-100"><a href="/area/云南/保山.html" class="nav-link ps-4"> 保山 </a></li><li class="w-100"><a href="/area/云南/文山.html" class="nav-link ps-4"> 文山 </a></li><li class="w-100"><a href="/area/云南/玉溪.html" class="nav-link ps-4"> 玉溪 </a></li><li class="w-100"><a href="/area/云南/楚雄.html" class="nav-link ps-4"> 楚雄 </a></li><li class="w-100"><a href="/area/云南/普洱.html" class="nav-link ps-4"> 普洱 </a></li><li class="w-100"><a href="/area/云南/昭通.html" class="nav-link ps-4"> 昭通 </a></li><li class="w-100"><a href="/area/云南/临沧.html" class="nav-link ps-4"> 临沧 </a></li><li class="w-100"><a href="/area/云南/怒江.html" class="nav-link ps-4"> 怒江 </a></li><li class="w-100"><a href="/area/云南/迪庆.html" class="nav-link ps-4"> 迪庆 </a></li><li class="w-100"><a href="/area/云南/丽江.html" class="nav-link ps-4"> 丽江 </a></li><li class="w-100"><a href="/area/云南/德宏.html" class="nav-link ps-4"> 德宏 </a></li><li class="w-100"><a href="/area/云南/西双版纳.html" class="nav-link ps-4"> 西双版纳 </a></li></ul></li><li><a href="#area_30" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">广西</span></a><ul class="collapse  nav flex-column ms-3" id="area_30" data-bs-parent="#menu"><li class="w-100"><a href="/area/广西/南宁.html" class="nav-link ps-4"> 南宁 </a></li><li class="w-100"><a href="/area/广西/崇左.html" class="nav-link ps-4"> 崇左 </a></li><li class="w-100"><a href="/area/广西/柳州.html" class="nav-link ps-4"> 柳州 </a></li><li class="w-100"><a href="/area/广西/来宾.html" class="nav-link ps-4"> 来宾 </a></li><li class="w-100"><a href="/area/广西/桂林.html" class="nav-link ps-4"> 桂林 </a></li><li class="w-100"><a href="/area/广西/梧州.html" class="nav-link ps-4"> 梧州 </a></li><li class="w-100"><a href="/area/广西/贺州.html" class="nav-link ps-4"> 贺州 </a></li><li class="w-100"><a href="/area/广西/贵港.html" class="nav-link ps-4"> 贵港 </a></li><li class="w-100"><a href="/area/广西/玉林.html" class="nav-link ps-4"> 玉林 </a></li><li class="w-100"><a href="/area/广西/百色.html" class="nav-link ps-4"> 百色 </a></li><li class="w-100"><a href="/area/广西/钦州.html" class="nav-link ps-4"> 钦州 </a></li><li class="w-100"><a href="/area/广西/河池.html" class="nav-link ps-4"> 河池 </a></li><li class="w-100"><a href="/area/广西/北海.html" class="nav-link ps-4"> 北海 </a></li><li class="w-100"><a href="/area/广西/防城港.html" class="nav-link ps-4"> 防城港 </a></li></ul></li><li><a href="#area_31" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">海南</span></a><ul class="collapse  nav flex-column ms-3" id="area_31" data-bs-parent="#menu"><li class="w-100"><a href="/area/海南/海口.html" class="nav-link ps-4"> 海口 </a></li><li class="w-100"><a href="/area/海南/三亚.html" class="nav-link ps-4"> 三亚 </a></li><li class="w-100"><a href="/area/海南/东方.html" class="nav-link ps-4"> 东方 </a></li><li class="w-100"><a href="/area/海南/临高.html" class="nav-link ps-4"> 临高 </a></li><li class="w-100"><a href="/area/海南/澄迈.html" class="nav-link ps-4"> 澄迈 </a></li><li class="w-100"><a href="/area/海南/儋州.html" class="nav-link ps-4"> 儋州 </a></li><li class="w-100"><a href="/area/海南/昌江.html" class="nav-link ps-4"> 昌江 </a></li><li class="w-100"><a href="/area/海南/白沙.html" class="nav-link ps-4"> 白沙 </a></li><li class="w-100"><a href="/area/海南/琼中.html" class="nav-link ps-4"> 琼中 </a></li><li class="w-100"><a href="/area/海南/定安.html" class="nav-link ps-4"> 定安 </a></li><li class="w-100"><a href="/area/海南/屯昌.html" class="nav-link ps-4"> 屯昌 </a></li><li class="w-100"><a href="/area/海南/琼海.html" class="nav-link ps-4"> 琼海 </a></li><li class="w-100"><a href="/area/海南/文昌.html" class="nav-link ps-4"> 文昌 </a></li><li class="w-100"><a href="/area/海南/保亭.html" class="nav-link ps-4"> 保亭 </a></li><li class="w-100"><a href="/area/海南/万宁.html" class="nav-link ps-4"> 万宁 </a></li><li class="w-100"><a href="/area/海南/陵水.html" class="nav-link ps-4"> 陵水 </a></li><li class="w-100"><a href="/area/海南/乐东.html" class="nav-link ps-4"> 乐东 </a></li><li class="w-100"><a href="/area/海南/五指山.html" class="nav-link ps-4"> 五指山 </a></li><li class="w-100"><a href="/area/海南/三沙.html" class="nav-link ps-4"> 三沙 </a></li></ul></li><li><a href="#area_32" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">香港</span></a><ul class="collapse  nav flex-column ms-3" id="area_32" data-bs-parent="#menu"><li class="w-100"><a href="/area/香港/香港.html" class="nav-link ps-4"> 香港 </a></li></ul></li><li><a href="#area_33" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">澳门</span></a><ul class="collapse  nav flex-column ms-3" id="area_33" data-bs-parent="#menu"><li class="w-100"><a href="/area/澳门/澳门.html" class="nav-link ps-4"> 澳门 </a></li></ul></li><li><a href="#area_34" aria-expanded="false" data-bs-toggle="collapse" class="nav-link align-items-center d-flex dropdown-indicator"><svg class="svg-inline--fa fa-caret-right" width="12" height="12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"></path></svg><span class="ms-1 d-sm-inline ">台湾</span></a><ul class="collapse  nav flex-column ms-3" id="area_34" data-bs-parent="#menu"><li class="w-100"><a href="/area/台湾/台北.html" class="nav-link ps-4"> 台北 </a></li><li class="w-100"><a href="/area/台湾/高雄.html" class="nav-link ps-4"> 高雄 </a></li><li class="w-100"><a href="/area/台湾/台中.html" class="nav-link ps-4"> 台中 </a></li></ul></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="col-md-10 ms-sm-auto col-lg-11 px-md-4 ">
+            
+    <div class="card mb-4 rounded-3 shadow-sm mt-4">
+        <div class="card-header py-3 d-flex align-items-center">
+            
+                <div class="pe-4">
+                    <span class="me-3 rounded-2 bg_custom_2 p-2 text-black fw-bold d-block" style="min-width: 130px; text-align: center">福建 &nbsp;&nbsp;厦门</span>
+                </div>
+                <div class="d-flex scrollable">
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230201.html" class="rounded-2 bg_custom_1 p-2 me-2 text-center text-decoration-none">厦门</a>
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230202.html" class="rounded-2 bg_custom_2 p-2 me-2 text-center text-decoration-none">同安</a>
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230203.html" class="rounded-2 bg_custom_2 p-2 me-2 text-center text-decoration-none">思明</a>
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230204.html" class="rounded-2 bg_custom_2 p-2 me-2 text-center text-decoration-none">海沧</a>
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230205.html" class="rounded-2 bg_custom_2 p-2 me-2 text-center text-decoration-none">湖里</a>
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230206.html" class="rounded-2 bg_custom_2 p-2 me-2 text-center text-decoration-none">集美</a>
+                    
+                        <a style="min-width: 90px" href="/weather/福建/厦门/101230207.html" class="rounded-2 bg_custom_2 p-2 me-2 text-center text-decoration-none">翔安</a>
+                    
+                </div>
+            
+        </div>
+        <div class="card-body">
+
+            <div class="fw-normal"><h1 class="text-secondary fw-bold fs-6 d-inline" title="【厦门】历史天气逐小时温度/降水量/湿度/aqi/气压/风向/风力/风速/能见度等数据 - 福建厦门历史天气查询">福建 厦门 厦门 近24小时历史天气</h1>  <a href="/dashboard" class="fw-normal text-danger  ms-2" target="_blank"><strong >查看更多 厦门 历史天气小时数据</strong></a></div>
+            <div class="row py-3">
+                <div class="col-12 col-lg-7">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="text-center">#</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-shijian"></i> 时间</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-tianqi"></i> 天气</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-wendu"></i> 温度</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-huabanfuben"></i> 降水</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-fengxiang"></i> 风向</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-fengli"></i> 风力</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-caozuo_fengsu"></i> 风速</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-daqiyaqiang"></i> 气压</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-shidu"></i> 湿度</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-a-PM25"></i> 空气质量</th>
+                                <th scope="col" class="text-center"><i class="iconfont icon-biyan"></i> 能见度</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">12-22 <strong>12:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">14.4℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东北风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">16km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">46%</td>
+                                    <td class="text-center">59</td>
+                                    <td class="text-center">10km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">12-22 <strong>11:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">13.4℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">15km/h</td>
+                                    <td class="text-center">1008hPa</td>
+                                    <td class="text-center">48%</td>
+                                    <td class="text-center">59</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">12-22 <strong>10:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">12.2℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">18km/h</td>
+                                    <td class="text-center">1009hPa</td>
+                                    <td class="text-center">48%</td>
+                                    <td class="text-center">58</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">12-22 <strong>09:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">11.5℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">16km/h</td>
+                                    <td class="text-center">1009hPa</td>
+                                    <td class="text-center">49%</td>
+                                    <td class="text-center">56</td>
+                                    <td class="text-center">12km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">12-22 <strong>08:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">10.7℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">20km/h</td>
+                                    <td class="text-center">1009hPa</td>
+                                    <td class="text-center">51%</td>
+                                    <td class="text-center">55</td>
+                                    <td class="text-center">12km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">6</td>
+                                    <td class="text-center">12-22 <strong>07:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">10.1℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">16km/h</td>
+                                    <td class="text-center">1008hPa</td>
+                                    <td class="text-center">57%</td>
+                                    <td class="text-center">57</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">7</td>
+                                    <td class="text-center">12-22 <strong>06:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">10.2℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">18km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">59%</td>
+                                    <td class="text-center">58</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">8</td>
+                                    <td class="text-center">12-22 <strong>05:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">10.4℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">19km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">61%</td>
+                                    <td class="text-center">57</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">9</td>
+                                    <td class="text-center">12-22 <strong>04:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">10.7℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">18km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">61%</td>
+                                    <td class="text-center">57</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">10</td>
+                                    <td class="text-center">12-22 <strong>03:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">10.8℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">17km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">63%</td>
+                                    <td class="text-center">57</td>
+                                    <td class="text-center">11km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">11</td>
+                                    <td class="text-center">12-22 <strong>02:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">11.2℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">16km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">64%</td>
+                                    <td class="text-center">57</td>
+                                    <td class="text-center">10km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">12</td>
+                                    <td class="text-center">12-22 <strong>01:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">11.5℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东北风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">19km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">66%</td>
+                                    <td class="text-center">59</td>
+                                    <td class="text-center">10km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">13</td>
+                                    <td class="text-center">12-22 <strong>00:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">11.6℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东北风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">21km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">67%</td>
+                                    <td class="text-center">57</td>
+                                    <td class="text-center">10km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">14</td>
+                                    <td class="text-center">12-21 <strong>23:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">11.8℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">24km/h</td>
+                                    <td class="text-center">1007hPa</td>
+                                    <td class="text-center">67%</td>
+                                    <td class="text-center">53</td>
+                                    <td class="text-center">12km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">15</td>
+                                    <td class="text-center">12-21 <strong>22:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">12.2℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东北风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">23km/h</td>
+                                    <td class="text-center">1006hPa</td>
+                                    <td class="text-center">64%</td>
+                                    <td class="text-center">51</td>
+                                    <td class="text-center">16km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">16</td>
+                                    <td class="text-center">12-21 <strong>21:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">12.5℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东北风</td>
+                                    <td class="text-center">4级</td>
+                                    <td class="text-center">17km/h</td>
+                                    <td class="text-center">1006hPa</td>
+                                    <td class="text-center">65%</td>
+                                    <td class="text-center">54</td>
+                                    <td class="text-center">17km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">17</td>
+                                    <td class="text-center">12-21 <strong>20:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">13.3℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">16km/h</td>
+                                    <td class="text-center">1005hPa</td>
+                                    <td class="text-center">68%</td>
+                                    <td class="text-center">56</td>
+                                    <td class="text-center">15km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">18</td>
+                                    <td class="text-center">12-21 <strong>19:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">13.7℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">17km/h</td>
+                                    <td class="text-center">1005hPa</td>
+                                    <td class="text-center">70%</td>
+                                    <td class="text-center">53</td>
+                                    <td class="text-center">15km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">19</td>
+                                    <td class="text-center">12-21 <strong>18:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">14.3℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">11km/h</td>
+                                    <td class="text-center">1004hPa</td>
+                                    <td class="text-center">71%</td>
+                                    <td class="text-center">47</td>
+                                    <td class="text-center">18km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">20</td>
+                                    <td class="text-center">12-21 <strong>17:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">15.4℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">12km/h</td>
+                                    <td class="text-center">1003hPa</td>
+                                    <td class="text-center">70%</td>
+                                    <td class="text-center">41</td>
+                                    <td class="text-center">18km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">21</td>
+                                    <td class="text-center">12-21 <strong>16:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">17.2℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东南风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">15km/h</td>
+                                    <td class="text-center">1002hPa</td>
+                                    <td class="text-center">60%</td>
+                                    <td class="text-center">36</td>
+                                    <td class="text-center">26km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">22</td>
+                                    <td class="text-center">12-21 <strong>15:00</strong></td>
+                                    <td class="text-center">多云</td>
+                                    <td class="text-center">18.4℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">15km/h</td>
+                                    <td class="text-center">1002hPa</td>
+                                    <td class="text-center">54%</td>
+                                    <td class="text-center">37</td>
+                                    <td class="text-center">27km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">23</td>
+                                    <td class="text-center">12-21 <strong>14:00</strong></td>
+                                    <td class="text-center">晴</td>
+                                    <td class="text-center">19.3℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">3级</td>
+                                    <td class="text-center">17km/h</td>
+                                    <td class="text-center">1002hPa</td>
+                                    <td class="text-center">53%</td>
+                                    <td class="text-center">35</td>
+                                    <td class="text-center">26km</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="text-center">24</td>
+                                    <td class="text-center">12-21 <strong>13:00</strong></td>
+                                    <td class="text-center">晴</td>
+                                    <td class="text-center">19.1℃</td>
+                                    <td class="text-center">0mm</td>
+                                    <td class="text-center">东风</td>
+                                    <td class="text-center">2级</td>
+                                    <td class="text-center">10km/h</td>
+                                    <td class="text-center">1002hPa</td>
+                                    <td class="text-center">50%</td>
+                                    <td class="text-center">29</td>
+                                    <td class="text-center">28km</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="card shadow-lg bg-white">
+                        <div class="card-header" title="温度：表示大气冷热程度的物理量，气象上给出的温度是指离地面1.5米高度上百叶箱中的空气温度。"><strong class="">福建 厦门 厦门</strong> 近24小时 温度 （单位：℃）</div>
+                        <div class="card-body">
+                            <div id="chats_wd" style="width: 100%;height:400px;"></div>
+                        </div>
+                    </div>
+                    <div class="card mt-3 shadow-lg">
+                        <div class="card-header"><strong class="">福建 厦门 厦门</strong> 近24小时 空气质量AQI</div>
+                        <div class="card-body">
+                            <div id="chats_aqi" style="width: 100%;height:350px;"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row pt-2 pb-4">
+                <div class="col-12 col-lg-7">
+                    <div class="card shadow-lg">
+                        <div class="card-header" title="风力风向：空气的水平运动，风力是风吹到物体上所表示出力量的大小，风向指风的来向。"><strong class="text-success">福建 厦门 厦门</strong> 近24小时 风向/风力/风速</div>
+                        <div class="card-body">
+                            <div id="chats_feng" style="width: 100%;height:400px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="card shadow-lg">
+                        <div class="card-header" title="相对湿度：空气中实际水汽压与当时气温下的饱和水汽压之比，以百分比（%）表示。"><strong class="text-success">福建 厦门 厦门</strong> 近24小时 湿度 （单位：%）</div>
+                        <div class="card-body">
+                            <div id="chats_sd" style="width: 100%;height:400px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card mt-4 shadow-lg">
+                        <div class="card-header" title="降水量：某一时段内的未经蒸发、渗透、流失的降水，在水平面上积累的深度，以毫米（mm）为单位。"><strong class="text-secondary">福建 厦门 厦门</strong> 近24小时 降水量 （单位：mm）
+
+                        </div>
+                        <div class="card-body">
+                            <div id="chats_rain" style="width: 100%;height:300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card mt-4 shadow-lg">
+                        <div class="card-header"><strong class="text-secondary">福建 厦门 厦门</strong> 近24小时 大气压强 （单位：hPa）</div>
+                        <div class="card-body">
+                            <div id="chats_qy" style="width: 100%;height:300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card mt-4 shadow-lg">
+                        <div class="card-header"><strong class="text-secondary">福建 厦门 厦门</strong> 近24小时 能见度 （单位：km）</div>
+                        <div class="card-body">
+                            <div id="chats_njd" style="width: 100%;height:300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-5 shadow-lg">
+        <div class="card-header d-flex justify-content-between pt-2 pb-1 align-items-center">
+            <h2 class="fs-6"><strong>福建 厦门 厦门</strong> - 历史天气数据 近30天历史数据 <a href="/dashboard" class="fw-normal text-danger  ms-2" target="_blank">查看更多 厦门 历史天气数据</a></h2>
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">分享</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">导出</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-2">
+            <div class="table-responsive">
+                <table class="table table-striped table-sm table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col"><i class="iconfont icon-shijian"></i> 日期</th>
+                        <th scope="col"><i class="iconfont icon-zuigaowendu"></i> 最高温度</th>
+                        <th scope="col"><i class="iconfont icon-zuidiwendu"></i> 最低温度</th>
+                        <th scope="col"><i class="iconfont icon-Cool_temp_up"></i> 温差</th>
+                        <th scope="col"><i class="iconfont icon-tianqi"></i> 天气</th>
+                        <th scope="col"><i class="iconfont icon-fengxiang"></i> 风向/风速</th>
+                        <th scope="col" title="24小时总降水量"><i class="iconfont icon-huabanfuben"></i> 24h降水量</th>
+                        <th scope="col"><i class="iconfont icon-jianshenjianfei"></i> 体感温度</th>
+                        <th scope="col"><i class="iconfont icon-richurila"></i> 日出/日落</th>
+                        <th scope="col"><i class="iconfont icon-yueliang"></i> 月升/月落</th>
+                        <th scope="col"><i class="iconfont icon-a-PM25"></i> 空气质量AQI</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                        <tr>
+                            <td>2024-12-22</td>
+                            <td>14.4℃</td>
+                            <td>10.1℃</td>
+                            <td>4.3℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>6.4℃</td>
+                            <td>06:47/17:24</td>
+                            <td>23:54/11:42</td>
+                            <td>59</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-21</td>
+                            <td>19.3℃</td>
+                            <td>11.6℃</td>
+                            <td>7.7℃</td>
+                            <td>晴</td>
+                            <td>东风转东北风 <strong>4-5级转3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>18.5℃</td>
+                            <td>06:47/17:24</td>
+                            <td>23:04/11:13</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-20</td>
+                            <td>17.8℃</td>
+                            <td>9.3℃</td>
+                            <td>8.5℃</td>
+                            <td>晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>15℃</td>
+                            <td>06:46/17:23</td>
+                            <td>22:11/10:41</td>
+                            <td>36</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-19</td>
+                            <td>14.1℃</td>
+                            <td>9.2℃</td>
+                            <td>4.9℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>4-5级转3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>8.8℃</td>
+                            <td>06:46/17:23</td>
+                            <td>21:16/10:05</td>
+                            <td>63</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-18</td>
+                            <td>17.9℃</td>
+                            <td>11.9℃</td>
+                            <td>6℃</td>
+                            <td>多云</td>
+                            <td>东风转东北风 <strong>3-4级转4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>15.7℃</td>
+                            <td>06:45/17:22</td>
+                            <td>20:16/09:22</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-17</td>
+                            <td>18.6℃</td>
+                            <td>9.6℃</td>
+                            <td>9℃</td>
+                            <td>晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>18.5℃</td>
+                            <td>06:45/17:22</td>
+                            <td>19:14/08:33</td>
+                            <td>58</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-16</td>
+                            <td>16.3℃</td>
+                            <td>10.6℃</td>
+                            <td>5.7℃</td>
+                            <td>多云转晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>11.4℃</td>
+                            <td>/</td>
+                            <td>/</td>
+                            <td>57</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-15</td>
+                            <td>14.6℃</td>
+                            <td>9.3℃</td>
+                            <td>5.3℃</td>
+                            <td>多云转阴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>11.4℃</td>
+                            <td>06:44/17:21</td>
+                            <td>17:06/06:29</td>
+                            <td>82</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-14</td>
+                            <td>15℃</td>
+                            <td>9.9℃</td>
+                            <td>5.1℃</td>
+                            <td>晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>11.9℃</td>
+                            <td>06:43/17:21</td>
+                            <td>16:08/05:21</td>
+                            <td>82</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-13</td>
+                            <td>18.5℃</td>
+                            <td>13.7℃</td>
+                            <td>4.8℃</td>
+                            <td>晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>18.5℃</td>
+                            <td>06:42/17:20</td>
+                            <td>15:17/04:12</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-12</td>
+                            <td>18.1℃</td>
+                            <td>14.7℃</td>
+                            <td>3.4℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>16℃</td>
+                            <td>06:42/17:20</td>
+                            <td>14:32/03:05</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-11</td>
+                            <td>23.1℃</td>
+                            <td>16.4℃</td>
+                            <td>6.7℃</td>
+                            <td>多云转阴</td>
+                            <td>无持续风向转东北风 <strong>&lt;3级转4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>24.1℃</td>
+                            <td>06:41/17:20</td>
+                            <td>13:53/02:01</td>
+                            <td>51</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-10</td>
+                            <td>22.2℃</td>
+                            <td>15.2℃</td>
+                            <td>7℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>22.2℃</td>
+                            <td>06:40/17:19</td>
+                            <td>13:16/01:00</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-09</td>
+                            <td>18.7℃</td>
+                            <td>13.4℃</td>
+                            <td>5.3℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>16.7℃</td>
+                            <td>/</td>
+                            <td>/</td>
+                            <td>68</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-08</td>
+                            <td>16.9℃</td>
+                            <td>13.4℃</td>
+                            <td>3.5℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>12.6℃</td>
+                            <td>06:39/17:19</td>
+                            <td>12:07/23:59</td>
+                            <td>73</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-07</td>
+                            <td>20.7℃</td>
+                            <td>16.2℃</td>
+                            <td>4.5℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>3-4级转4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>20.5℃</td>
+                            <td>06:39/17:19</td>
+                            <td>11:31/22:59</td>
+                            <td>44</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-06</td>
+                            <td>22.7℃</td>
+                            <td>16.3℃</td>
+                            <td>6.4℃</td>
+                            <td>多云转晴</td>
+                            <td>东北风 <strong>3-4级转4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>23℃</td>
+                            <td>06:38/17:18</td>
+                            <td>10:51/21:57</td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-05</td>
+                            <td>22.3℃</td>
+                            <td>16.6℃</td>
+                            <td>5.7℃</td>
+                            <td>多云转晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>21.4℃</td>
+                            <td>06:37/17:18</td>
+                            <td>10:07/20:55</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-04</td>
+                            <td>22.1℃</td>
+                            <td>17.1℃</td>
+                            <td>5℃</td>
+                            <td>多云转晴</td>
+                            <td>东北风 <strong>3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>21.2℃</td>
+                            <td>06:36/17:18</td>
+                            <td>09:18/19:53</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-03</td>
+                            <td>24.7℃</td>
+                            <td>16.4℃</td>
+                            <td>8.3℃</td>
+                            <td>晴</td>
+                            <td>东风转东北风 <strong>4-5级转3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>24.8℃</td>
+                            <td>06:36/17:18</td>
+                            <td>08:24/18:52</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-02</td>
+                            <td>24℃</td>
+                            <td>14.4℃</td>
+                            <td>9.6℃</td>
+                            <td>晴</td>
+                            <td>无持续风向 <strong>&lt;3级</strong></td>
+                            <td>0mm</td>
+                            <td>22.9℃</td>
+                            <td>/</td>
+                            <td>/</td>
+                            <td>61</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-01</td>
+                            <td>22.5℃</td>
+                            <td>13.5℃</td>
+                            <td>9℃</td>
+                            <td>多云</td>
+                            <td>无持续风向 <strong>&lt;3级</strong></td>
+                            <td>0mm</td>
+                            <td>21.5℃</td>
+                            <td>06:34/17:18</td>
+                            <td>06:28/17:06</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-30</td>
+                            <td>19.8℃</td>
+                            <td>11.7℃</td>
+                            <td>8.1℃</td>
+                            <td>多云</td>
+                            <td>东北风转无持续风向 <strong>3-4级转&lt;3级</strong></td>
+                            <td>0mm</td>
+                            <td>20℃</td>
+                            <td>06:34/17:18</td>
+                            <td>05:31/16:22</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-29</td>
+                            <td>19.3℃</td>
+                            <td>12.9℃</td>
+                            <td>6.4℃</td>
+                            <td>多云转晴</td>
+                            <td>东北风转无持续风向 <strong>3-4级转&lt;3级</strong></td>
+                            <td>0mm</td>
+                            <td>16.7℃</td>
+                            <td>06:33/17:18</td>
+                            <td>04:35/15:43</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-28</td>
+                            <td>21.7℃</td>
+                            <td>13.5℃</td>
+                            <td>8.2℃</td>
+                            <td>晴</td>
+                            <td>无持续风向 <strong>&lt;3级</strong></td>
+                            <td>0mm</td>
+                            <td>18.4℃</td>
+                            <td>06:32/17:18</td>
+                            <td>03:43/15:10</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-27</td>
+                            <td>20.8℃</td>
+                            <td>14.4℃</td>
+                            <td>6.4℃</td>
+                            <td>晴</td>
+                            <td>东北风转无持续风向 <strong>3-4级转&lt;3级</strong></td>
+                            <td>0mm</td>
+                            <td>18.6℃</td>
+                            <td>06:32/17:18</td>
+                            <td>02:52/14:39</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-26</td>
+                            <td>22.9℃</td>
+                            <td>16.2℃</td>
+                            <td>6.7℃</td>
+                            <td>晴</td>
+                            <td>东北风 <strong>4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>23.2℃</td>
+                            <td>06:31/17:18</td>
+                            <td>02:02/14:10</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-25</td>
+                            <td>21.1℃</td>
+                            <td>17.8℃</td>
+                            <td>3.3℃</td>
+                            <td>小雨转多云</td>
+                            <td>无持续风向 <strong>&lt;3级</strong></td>
+                            <td>7.6mm</td>
+                            <td>21.2℃</td>
+                            <td>06:30/17:18</td>
+                            <td>01:12/13:42</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-24</td>
+                            <td>22.1℃</td>
+                            <td>17℃</td>
+                            <td>5.1℃</td>
+                            <td>小雨</td>
+                            <td>东北风 <strong>4-5级转3-4级</strong></td>
+                            <td>0mm</td>
+                            <td>22.5℃</td>
+                            <td>06:29/17:18</td>
+                            <td>00:21/13:14</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>2024-11-23</td>
+                            <td>20.4℃</td>
+                            <td>16.9℃</td>
+                            <td>3.5℃</td>
+                            <td>多云</td>
+                            <td>东北风 <strong>4-5级</strong></td>
+                            <td>0mm</td>
+                            <td>18.2℃</td>
+                            <td>/</td>
+                            <td>/</td>
+                            <td>37</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/static/app/echarts/echarts.min.js"></script>
+    <script>
+        var aqi_data = [["2024-12-21 13:00",29 ],["2024-12-21 14:00",35 ],["2024-12-21 15:00",37 ],["2024-12-21 16:00",36 ],["2024-12-21 17:00",41 ],["2024-12-21 18:00",47 ],["2024-12-21 19:00",53 ],["2024-12-21 20:00",56 ],["2024-12-21 21:00",54 ],["2024-12-21 22:00",51 ],["2024-12-21 23:00",53 ],["2024-12-22 00:00",57 ],["2024-12-22 01:00",59 ],["2024-12-22 02:00",57 ],["2024-12-22 03:00",57 ],["2024-12-22 04:00",57 ],["2024-12-22 05:00",57 ],["2024-12-22 06:00",58 ],["2024-12-22 07:00",57 ],["2024-12-22 08:00",55 ],["2024-12-22 09:00",56 ],["2024-12-22 10:00",58 ],["2024-12-22 11:00",59 ],["2024-12-22 12:00",59 ],]
+        var wd_data = [["2024-12-21 13:00",19.1 ],["2024-12-21 14:00",19.3 ],["2024-12-21 15:00",18.4 ],["2024-12-21 16:00",17.2 ],["2024-12-21 17:00",15.4 ],["2024-12-21 18:00",14.3 ],["2024-12-21 19:00",13.7 ],["2024-12-21 20:00",13.3 ],["2024-12-21 21:00",12.5 ],["2024-12-21 22:00",12.2 ],["2024-12-21 23:00",11.8 ],["2024-12-22 00:00",11.6 ],["2024-12-22 01:00",11.5 ],["2024-12-22 02:00",11.2 ],["2024-12-22 03:00",10.8 ],["2024-12-22 04:00",10.7 ],["2024-12-22 05:00",10.4 ],["2024-12-22 06:00",10.2 ],["2024-12-22 07:00",10.1 ],["2024-12-22 08:00",10.7 ],["2024-12-22 09:00",11.5 ],["2024-12-22 10:00",12.2 ],["2024-12-22 11:00",13.4 ],["2024-12-22 12:00",14.4 ],]
+        var sd_data = [["2024-12-21 13:00",50 ],["2024-12-21 14:00",53 ],["2024-12-21 15:00",54 ],["2024-12-21 16:00",60 ],["2024-12-21 17:00",70 ],["2024-12-21 18:00",71 ],["2024-12-21 19:00",70 ],["2024-12-21 20:00",68 ],["2024-12-21 21:00",65 ],["2024-12-21 22:00",64 ],["2024-12-21 23:00",67 ],["2024-12-22 00:00",67 ],["2024-12-22 01:00",66 ],["2024-12-22 02:00",64 ],["2024-12-22 03:00",63 ],["2024-12-22 04:00",61 ],["2024-12-22 05:00",61 ],["2024-12-22 06:00",59 ],["2024-12-22 07:00",57 ],["2024-12-22 08:00",51 ],["2024-12-22 09:00",49 ],["2024-12-22 10:00",48 ],["2024-12-22 11:00",48 ],["2024-12-22 12:00",46 ],]
+        var rain_data = [["2024-12-21 13:00",0 ],["2024-12-21 14:00",0 ],["2024-12-21 15:00",0 ],["2024-12-21 16:00",0 ],["2024-12-21 17:00",0 ],["2024-12-21 18:00",0 ],["2024-12-21 19:00",0 ],["2024-12-21 20:00",0 ],["2024-12-21 21:00",0 ],["2024-12-21 22:00",0 ],["2024-12-21 23:00",0 ],["2024-12-22 00:00",0 ],["2024-12-22 01:00",0 ],["2024-12-22 02:00",0 ],["2024-12-22 03:00",0 ],["2024-12-22 04:00",0 ],["2024-12-22 05:00",0 ],["2024-12-22 06:00",0 ],["2024-12-22 07:00",0 ],["2024-12-22 08:00",0 ],["2024-12-22 09:00",0 ],["2024-12-22 10:00",0 ],["2024-12-22 11:00",0 ],["2024-12-22 12:00",0 ],]
+        var qy_data = [["2024-12-21 13:00",1002 ],["2024-12-21 14:00",1002 ],["2024-12-21 15:00",1002 ],["2024-12-21 16:00",1002 ],["2024-12-21 17:00",1003 ],["2024-12-21 18:00",1004 ],["2024-12-21 19:00",1005 ],["2024-12-21 20:00",1005 ],["2024-12-21 21:00",1006 ],["2024-12-21 22:00",1006 ],["2024-12-21 23:00",1007 ],["2024-12-22 00:00",1007 ],["2024-12-22 01:00",1007 ],["2024-12-22 02:00",1007 ],["2024-12-22 03:00",1007 ],["2024-12-22 04:00",1007 ],["2024-12-22 05:00",1007 ],["2024-12-22 06:00",1007 ],["2024-12-22 07:00",1008 ],["2024-12-22 08:00",1009 ],["2024-12-22 09:00",1009 ],["2024-12-22 10:00",1009 ],["2024-12-22 11:00",1008 ],["2024-12-22 12:00",1007 ],]
+        var njd_data = [["2024-12-21 13:00",28 ],["2024-12-21 14:00",26 ],["2024-12-21 15:00",27 ],["2024-12-21 16:00",26 ],["2024-12-21 17:00",18 ],["2024-12-21 18:00",18 ],["2024-12-21 19:00",15 ],["2024-12-21 20:00",15 ],["2024-12-21 21:00",17 ],["2024-12-21 22:00",16 ],["2024-12-21 23:00",12 ],["2024-12-22 00:00",10 ],["2024-12-22 01:00",10 ],["2024-12-22 02:00",10 ],["2024-12-22 03:00",11 ],["2024-12-22 04:00",11 ],["2024-12-22 05:00",11 ],["2024-12-22 06:00",11 ],["2024-12-22 07:00",11 ],["2024-12-22 08:00",12 ],["2024-12-22 09:00",12 ],["2024-12-22 10:00",11 ],["2024-12-22 11:00",11 ],["2024-12-22 12:00",10 ],]
+        var data = [["2024-12-22 12:00",3,'NE',16 ,'东北风'],["2024-12-22 11:00",3,'E',15 ,'东风'],["2024-12-22 10:00",3,'E',18 ,'东风'],["2024-12-22 09:00",3,'E',16 ,'东风'],["2024-12-22 08:00",4,'E',20 ,'东风'],["2024-12-22 07:00",3,'E',16 ,'东风'],["2024-12-22 06:00",4,'E',18 ,'东风'],["2024-12-22 05:00",4,'E',19 ,'东风'],["2024-12-22 04:00",3,'E',18 ,'东风'],["2024-12-22 03:00",3,'E',17 ,'东风'],["2024-12-22 02:00",4,'E',16 ,'东风'],["2024-12-22 01:00",4,'NE',19 ,'东北风'],["2024-12-22 00:00",4,'NE',21 ,'东北风'],["2024-12-21 23:00",4,'E',24 ,'东风'],["2024-12-21 22:00",4,'NE',23 ,'东北风'],["2024-12-21 21:00",4,'NE',17 ,'东北风'],["2024-12-21 20:00",3,'E',16 ,'东风'],["2024-12-21 19:00",3,'E',17 ,'东风'],["2024-12-21 18:00",3,'E',11 ,'东风'],["2024-12-21 17:00",3,'E',12 ,'东风'],["2024-12-21 16:00",3,'SE',15 ,'东南风'],["2024-12-21 15:00",3,'E',15 ,'东风'],["2024-12-21 14:00",3,'E',17 ,'东风'],["2024-12-21 13:00",2,'E',10 ,'东风'],]
+    </script>
+    <script src="/static/app/index.js"></script>
+
+
+            <div class="pt-4 pb-2">
+                <p class="bg-dark shadow-lg py-3 rounded-2 text-secondary text-center fs08">
+                    
+                        版权所有 Copyright&copy;2023-2049 datashareclub.com. All Rights Reserved
+                        <a href="https://beian.miit.gov.cn/" target="_blank" class="me-3">蜀ICP备19015071号-1</a>联系邮件：datashareclub@qq.com
+
+
+                    
+                    <br/><img src="/static/images/qrcode.jpg" class="rounded" style="width: 160px;margin:20px 0 10px 0;"/><br/>微信关注公众号/在线咨询
+                </p>
+            </div>
+        </main>
+
+    </div>
+
+</div>
+</body>
+</html>

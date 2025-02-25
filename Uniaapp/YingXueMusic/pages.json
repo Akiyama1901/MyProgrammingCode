@@ -1,0 +1,86 @@
+{
+	  "pages": [
+	    {
+	      "path": "pages/index/index",
+	      "style": {
+	        "navigationBarTitleText": "发现",
+	        "app-plus": {
+	          "titleNView": false
+	        }
+	      }
+	    },
+		{
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "视频",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/village/village",
+			"style": {
+				"navigationBarTitleText": "云村",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/account/account",
+			"style": {
+				"navigationBarTitleText": "账号",
+				"titleNView": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1E90FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "发现",
+				"iconPath": "static/icon/music.png",
+				"selectedIconPath": "static/icon/music-active.png"
+			},
+			{
+				"pagePath": "pages/video/video",
+				"text": "视频",
+				"iconPath": "static/icon/video.png",
+				"selectedIconPath": "static/icon/video-active.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/icon/mine.png",
+				"selectedIconPath": "static/icon/mine-active.png"
+			},
+			{
+				"pagePath": "pages/village/village",
+				"text": "云村",
+				"iconPath": "static/icon/village.png",
+				"selectedIconPath": "static/icon/village-active.png"
+			},
+			{
+				"pagePath": "pages/account/account",
+				"text": "账号",
+				"iconPath": "static/icon/account.png",
+				"selectedIconPath": "static/icon/account-active.png"
+			}
+		]
+	}
+}
